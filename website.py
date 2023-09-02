@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-# from utils import model_predictions
+from utils import model_predictions
 from preprocess import preprocess_text
 
 app = Flask(__name__)
@@ -15,6 +15,7 @@ def test():
 @app.route('/submit_form', methods=['GET', 'POST'])
 def submit_form():
     if request.method == 'POST':
+
         # Extract answers from the form
         answer1 = preprocess_text( request.form['answer1'].lower() )
         answer2 = preprocess_text( request.form['answer2'].lower() )
@@ -23,13 +24,16 @@ def submit_form():
 
         answers_list = [answer1, answer2, answer3]
         # print(answers_list)
+        
+        # another way
+        # answers_list = [preprocess_text(request.form[f'answer{i}'].lower()) for i in range(1, 4)]
 
-        # # Perform sentiment classification
-        # classification_output = model_predictions(answers_list)
-        # print(classification_output)
+        # Perform sentiment classification
+        classification_output = model_predictions(answers_list)
+        print(classification_output)
 
-        # # Return the classification result as JSON
-        # return jsonify({"classification": classification_output})
+        # Return the classification result as JSON
+        return jsonify({"classification": classification_output})
 
     return render_template('test_page.html')
 
