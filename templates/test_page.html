@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Test</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="row">
+            <div class="col-1"><a href="/">home</a></div>
+            <div class="col-1"><a href="test.html">Test</a></div>
+            <div class="col-8"><a href="">Contacts</a></div>
+            <div class="col-2"><a href="">Profile</a></div>
+        </div>
+    </nav><br>
+    
+
+    <div style="font-size: 18px; font-weight: bold; margin-bottom: 20px; padding-left: 50px;">
+        <p>Instructions:</p>
+        <p>Fill in the blanks with the answers to the respective questions, and remember to click "Submit" after answering each question individually.</p>
+    </div>
+    <div>
+
+    </div><br>
+    <form class="questionnaire" style="padding-left: 50px;" action="http://127.0.0.1:5000/submit_form" method="POST">
+        <label for="question1" style="font-size: 20px;">1. Your plans for the day suddenly change due to unforeseen circumstances. How do you adapt to unexpected changes, and what emotions do you experience?</label>
+        <textarea id="answer1" name="answer1" style="width: 85vw; height: 3em;"></textarea><br><br>
+    
+        <label for="question2" style="font-size: 20px;">2. Reflect on a past loss, such as the death of a loved one or the end of a significant relationship. How did you cope with the grief and loss?</label>
+        <textarea id="answer2" name="answer2" style="width: 85vw; height: 3em;"></textarea><br><br>
+    
+        <label for="question3" style="font-size: 20px;">3. Discuss a time when you felt lonely or isolated. What actions do you take to alleviate loneliness and connect with others?</label>
+        <textarea id="answer3" name="answer3" style="width: 85vw; height: 3em;"></textarea><br><br>
+    
+        <button type="submit" id="questionnaire_submit">Submit</button>
+    </form>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
