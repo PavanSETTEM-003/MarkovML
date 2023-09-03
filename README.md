@@ -80,7 +80,7 @@ The prevalence of mental health challenges in today’s digital age necessitates
   <li>Dowload Model weights</li>
   <p>
 
-The model weights used in this project : [Google Drive Model Weights](https://drive.google.com/drive/folders/16K36oWUfh_upLUGABsC2mrO1vMdASXnu)
+The model weights used in this project : [Google Drive Model Weights](https://drive.google.com/file/d/1uufvhcWl_vkdgaKtjVMFFG0PP168_Jkb/view?usp=sharing)
 
 Modify the line no 10 in the `utils.py` file to match the location of the downloaded model weights on your local machine.
 
