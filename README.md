@@ -31,14 +31,15 @@ The prevalence of mental health challenges in today’s digital age necessitates
 │   └── SVM.ipynb
 ├── README.md
 ├── requirements.txt
-├── static
-│   ├── media
-│   │   └── brain.png
-│   └── style.css
-├── templates
-│   ├── index.html
-│   └── test_page.html
 └── Web-Dev
+    ├── static
+    │   ├── media
+    │   │   └── brain.png
+    │   └── style.css
+    ├── templates
+    │   ├── index.html
+    │   └── test_page.html
+    ├── preprocess.py  
     ├── utils.py
     └── website.py
 ```
@@ -75,3 +76,34 @@ The prevalence of mental health challenges in today’s digital age necessitates
   <li>Install the required dependencies:</li>
 
   <pre><code>pip install -r requirements.txt</code></pre>
+
+  <li>Dowload Model weights</li>
+  <p>
+
+The model weights used in this project : [Google Drive Model Weights](https://drive.google.com/drive/folders/16K36oWUfh_upLUGABsC2mrO1vMdASXnu)
+
+Modify the line no 10 in the `utils.py` file to match the location of the downloaded model weights on your local machine.
+
+   ```python
+   # In utils.py
+   model.load_weights("path to the downloaded weights in your local machine")
+   ```
+  </p>
+
+<h2>Run the Flask File</h2>
+<p>
+    Navigate to the 'Web-Dev' folder where the Flask application, 'website.py', is located.
+    Run the Flask application by executing the following command:
+
+   ```python
+   python website.py
+   ```
+![Home_page](https://github.com/PavanSETTEM-003/MarkovML/assets/88257205/582951c6-0f00-4e1d-8dd3-639e9df4775b)
+![Test_page](https://github.com/PavanSETTEM-003/MarkovML/assets/88257205/a6ee3419-51cf-43fa-8431-c53b27587f2b)
+
+
+</p>
+
+
+<h2></h2>
+🙌 We highly value your feedback as it enables us to continuously improve the functionality and usability of the code. 🚀
