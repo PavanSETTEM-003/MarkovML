@@ -1,0 +1,89 @@
+.slider:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 25%;
+  height: 8px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #db3a11;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0439aa;
+  cursor: pointer;
+}
+
+
+
+.learning_rate_input{
+    width: 20%;
+}
+
+.button_slide {
+    border: 2px solid rgb(222, 226, 230);
+    color: #090909;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #d63d9b;
+    transition:  ease-out 1s;
+  }
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #ed4e4e;
+  }
+
+.experiments_headings{
+    color: rgb(20, 21, 23);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block; /* Labels should be displayed inline */
+    width: 120px; /* Set a fixed width for labels */
+    vertical-align: middle; /* Align labels vertically in the middle */
+}
+
+input[type="range"], input[type="number"] {
+    width: 220px;
+    vertical-align: middle; /* Align input elements vertically in the middle */
+}
+
+/* Remove text decoration from anchor elements */
+a {
+    text-decoration: none;
+}
+
+.hover_effect{
+    border-color: #090909;
+}
+
+
